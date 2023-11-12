@@ -59,6 +59,7 @@ a {
 .cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 80px;
   margin-bottom: 30px;
 }
@@ -82,11 +83,24 @@ a {
   text-align: center;
 }
 
+.card-footer .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .card-footer p {
-  color: #6B6C6C;
+  color: #838585;
 }
 
 .card-footer i {
-  font-size: 30px;
+  font-size: 24px;
   color: #1EDD88;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card-footer i:hover {
+  filter:saturate(50)
 }
